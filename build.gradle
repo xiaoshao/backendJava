@@ -18,10 +18,11 @@ ext {
     SLF4J = "org.slf4j:slf4j-api:1.7.7"
     JUNIT = "junit:junit:4.11"
     MOCKIT_TO = "org.mockito:mockito-all:1.10.19"
+    JACKSON = "org.codehaus.jackson:jackson-mapper-asl:1.9.13"
 }
 
 dependencies {
-    compile SPRING_CORE, SPRING_WEBMVC, SPRING_CONTEXT, SLF4J
+    compile SPRING_CORE, SPRING_WEBMVC, SPRING_CONTEXT, SLF4J, JACKSON
     testCompile JUNIT, MOCKIT_TO
 }
 
