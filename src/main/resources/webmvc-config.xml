@@ -27,4 +27,11 @@
             </props>
         </property>
     </bean>
+
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/front"/>
+            <bean class="com.xiaoshao.interceptor.MyInterceptor"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
 </beans>
